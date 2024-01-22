@@ -31,7 +31,7 @@ const app = Vue.createApp({
     },
     computed:{
         selectTags(){
-            console.log("değişti")
+      
             return selecteds=this.frameworks.filter(i=>i.selected)
         }
     }
