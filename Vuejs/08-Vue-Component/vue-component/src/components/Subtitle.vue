@@ -1,21 +1,26 @@
 <template>
   <div>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque
-      repellat, harum sapiente rem minima itaque eveniet expedita deserunt
-      nesciunt, consectetur, velit nulla quae iusto! Esse minus corrupti
-      expedita temporibus?
+      {{ subText }}
     </p>
+    <SubButton />
   </div>
 </template>
 
 <script>
-export default {};
+import SubButton from "./SubButton.vue";
+export default {
+  props: ["subText"],
+  components:{
+    SubButton
+  }
+};
 </script>
 
 <style scoped>
-p{
-    text-align: justify;
-    text-indent: 1em;
+p {
+  text-align: justify;
+  text-indent: 1em;
+  font-weight: 600;
 }
 </style>

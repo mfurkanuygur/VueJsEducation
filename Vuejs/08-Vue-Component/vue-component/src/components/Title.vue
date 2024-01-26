@@ -1,22 +1,21 @@
 <template>
   <div>
-    <h3>{{ title }}</h3>
+    <h3>{{ titleText }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      title: "Vue Framework this is a main title",
-    };
-  },
+  props:["titleText"],
+ 
 };
 </script>
 
 <style scoped>
 h3 {
   color: blue;
+  font-style: italic;
+  font-weight: 400;
 }
 div {
   background-color: darkgray;
